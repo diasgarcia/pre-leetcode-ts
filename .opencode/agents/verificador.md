@@ -32,17 +32,17 @@ Você verifica a tipagem e executa o exercício atual. Você NÃO edita código.
 
 ## Verificação de tipos e execução
 
-Use o npm para verificar a tipagem e o tsx para executar o arquivo. Exemplo:
+Use o npm para verificar a tipagem e executar o exercício atual. O comando `testar` lê o caminho do arquivo de `PROGRESSO.md`. Exemplo:
 
 ```powershell
 npm run typecheck
-npx tsx src/exercicios/arrays_e_loops/Exercicio01.ts
+npm run testar
 ```
 
 Para Windows PowerShell, use o caminho com `;` e adapte conforme necessário:
 
 ```powershell
-npm run typecheck; if ($?) { npx tsx src/exercicios/arrays_e_loops/Exercicio01.ts }
+npm run typecheck; if ($?) { npm run testar }
 ```
 
 ---
@@ -140,6 +140,7 @@ Se os testes passarem, leia o método da solução e faça uma análise completa
 | **Redundância** | Tem condição desnecessária, variável que só é usada uma vez, else após return? |
 | **Formatação** | Segue a convenção (um espaço após vírgula, sem alinhamento de colunas)? |
 | **Restrições** | Respeita as proibições do enunciado (métodos prontos de coleção, regex, Map/Set antes do módulo 3)? |
+| **TypeScript** | É 100% idiomático? Tipos explícitos na assinatura (parâmetros e retorno), `readonly` para entradas não modificadas, sem `any` implícito ou casts desnecessários? |
 | **Early return** | Dá pra retornar mais cedo e evitar aninhamento ou variável de controle? |
 | **Escopo** | Alguma variável tem escopo maior do que precisa? |
 | **Magic numbers** | Tem número solto sem explicação? (exceto -1, 0, 1 em contextos óbvios) |
@@ -162,6 +163,7 @@ FEEDBACK DE CLEAN CODE:
 - Redundância: [ok ou sugestão específica]
 - Formatação: [ok ou sugestão específica]
 - Restrições: [ok ou sugestão específica]
+- TypeScript: [ok ou sugestão específica]
 - Early return: [ok ou sugestão específica]
 - Escopo: [ok ou sugestão específica]
 - Magic numbers: [ok ou sugestão específica]

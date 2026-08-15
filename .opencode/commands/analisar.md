@@ -6,7 +6,7 @@ subtask: true
 # /analisar
 
 1. Leia `PROGRESSO.md` e identifique o exercicio atual.
-2. Execute o exercicio com `npx tsx <arquivo>`. A analise ciclomatica aparece na mesma tabela dos testes.
+2. Execute o exercicio com `npm run testar`. A analise ciclomatica aparece na mesma tabela dos testes.
 3. Mostre a saida completa para o aluno.
 4. Interprete as linhas `CCN`:
    - `OK`: CCN dentro do limite definido no `iniciar(...)`, mostrar classificacao (baixa/moderada/alta)

@@ -46,6 +46,7 @@ Analise obrigatoriamente:
 - Usa estruturas ainda não ensinadas (`Map`/`Set` antes do módulo 3)?
 - Usa regex quando proibido?
 - Usa métodos prontos de coleção que eliminam o objetivo pedagógico (`map`, `filter`, `reduce`, `sort`, `forEach`)?
+- É 100% TypeScript idiomático: tipos explícitos na assinatura (parâmetros e retorno), `readonly` para entradas não modificadas, sem `any` implícito, sem casts desnecessários, sem atalhos que escondam o tipo real?
 - A solução passa nos testes por coincidência mas falha em outros casos?
 - Complexidade de tempo atende ao esperado?
 - Complexidade de espaço atende ao esperado?

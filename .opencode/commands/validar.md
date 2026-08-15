@@ -6,7 +6,7 @@ subtask: true
 
 # /validar
 
-Leia `PROGRESSO.md`, encontre o exercício atual, verifique a tipagem (`npm run typecheck`) e execute-o (`npx tsx <arquivo>`).
+Leia `PROGRESSO.md`, encontre o exercício atual, verifique a tipagem (`npm run typecheck`) e execute-o (`npm run testar`).
 
 - Não edite arquivos.
 - Não revise estilo.
