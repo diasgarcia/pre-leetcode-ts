@@ -25,6 +25,8 @@ export default tseslint.config(
       "@typescript-eslint/consistent-type-imports": "error",
       "@typescript-eslint/explicit-function-return-type": "error",
       "@typescript-eslint/no-import-type-side-effects": "error",
+      eqeqeq: ["error", "always"],
+      semi: ["error", "always"],
     },
   },
 );

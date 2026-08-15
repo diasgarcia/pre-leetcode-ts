@@ -47,7 +47,8 @@ Você cria somente o próximo exercício permitido pela trilha. Você NUNCA impl
 - Reutiliza conceitos já apresentados.
 - Introduz no máximo um conceito principal novo.
 - Possui um único objetivo claro.
-- Segue o formato obrigatório de JSDoc HTML (veja o exemplo abaixo).
+- Segue o formato obrigatório de JSDoc (veja o exemplo abaixo).
+- Assinatura em TypeScript idiomático: tipos explícitos nos parâmetros e no retorno, `readonly` para entradas que não são modificadas, sem `any` ou casts.
 - Assinatura pronta, função com `TODO`, retorno temporário mínimo.
 - Testes no corpo do arquivo com **todas as possibilidades relevantes ao problema**: casos comuns, extremos (vazio, unitário, negativos, zeros, valores grandes, duplicados, limites), e variações de posição (início, meio, fim). Mínimo de 6 testes.
 - **Compila sem a solução.**
@@ -57,34 +58,30 @@ Você cria somente o próximo exercício permitido pela trilha. Você NUNCA impl
 
 ### Formato obrigatório do JSDoc
 
-Todo exercício deve usar JSDoc com HTML. Exemplo completo:
+Todo exercício deve usar JSDoc em texto simples. Comentários TypeScript não aplicam formatação — nem HTML nem markdown. Exemplo completo:
 
 ```ts
 import { finalizar, iniciar, resultado } from "../../util/index.js";
 
 /**
- * <h2>Exercício XX — Nome do exercício</h2>
+ * Exercício XX — Nome do exercício
  *
- * <p><strong>Enunciado:</strong></p>
- * <p>
+ * Enunciado:
+ *
  * Descrição do problema.
- * </p>
  *
- * <p><strong>Exemplos:</strong></p>
- * <pre>{@code
+ * Exemplos:
+ *
  * entrada -> saída
- * }</pre>
  *
- * <p><strong>Restrições:</strong></p>
- * <ul>
- *     <li>...</li>
- * </ul>
+ * Restrições:
  *
- * <p><strong>Complexidade esperada:</strong></p>
- * <ul>
- *     <li>Tempo: O(...)</li>
- *     <li>Espaço: O(...)</li>
- * </ul>
+ * - ...
+ *
+ * Complexidade esperada:
+ *
+ * - Tempo: O(...)
+ * - Espaço: O(...)
  */
 export function metodo(parametro: tipo): tipo {
     // TODO: implemente sua solução
@@ -105,15 +102,15 @@ finalizar();
 
 Regras de formatação:
 
-- `<h2>` para o título do exercício.
-- `<p><strong>...</strong></p>` para os títulos das seções.
-- `<p>` para parágrafos descritivos.
-- `<pre>{@code ...}</pre>` para exemplos de entrada/saída.
-- `<ul>` e `<li>` para restrições e complexidade.
-- `{@code ...}` para nomes de funções, valores e trechos de código no meio do texto.
-- Nunca use Markdown (`#`, `-`, `` ` ``, ```` ``` ````) dentro do JSDoc.
+- Primeira linha com o título do exercício (ex: `Exercício 01 — Somar todos os elementos`).
+- `Enunciado:` para a descrição do problema.
+- `Exemplos:` para entradas e saídas esperadas.
+- `Restrições:` para as restrições.
+- `Complexidade esperada:` para tempo e espaço.
+- Nunca use tags HTML (`<h2>`, `<p>`, `<strong>`, `<pre>`, `<ul>`, `<li>`) nem `{@code}` dentro do JSDoc.
+- Nunca use markdown (`**`, crases, blocos ``` ``` ```) dentro do JSDoc — comentários TS não o renderizam.
 - Não use `<br>` repetidamente para simular quebras de linha.
-- Alinhe exemplos dentro de `<pre>{@code ...}</pre>` quando melhorar a leitura.
+- Alinhe os exemplos quando melhorar a leitura.
 
 ---
 

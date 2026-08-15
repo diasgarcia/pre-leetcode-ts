@@ -39,7 +39,7 @@ pre-leetcode-ts/
 | `npm run verify` | Lint, typecheck, testes com cobertura e build |
 | `npm run test` | Executa os testes unitários da infraestrutura |
 | `npm run coverage` | Executa os testes e gera o relatório de cobertura |
-| `npx tsx <arquivo>` | Executa um exercício e mostra a tabela de resultados |
+| `npm run testar` | Executa o exercício atual (lido do `PROGRESSO.md`) |
 
 ## Roadmap
 

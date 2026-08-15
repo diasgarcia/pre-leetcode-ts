@@ -63,6 +63,7 @@ Ao revisar uma solução, analise obrigatoriamente:
 
 - **Correção** — o código produz os resultados esperados para todos os testes?
 - **Legibilidade** — nomes de variáveis são claros? A estrutura é fácil de entender?
+- **TypeScript idiomático (100%)** — o código segue o padrão correto de TypeScript? Tipos explícitos na assinatura (parâmetros e retorno), `readonly` para entradas que não são modificadas, sem `any` implícito, sem casts desnecessários, sem atalhos que escondam o tipo real?
 - **Complexidade** — atende à complexidade esperada? O aluno entende por quê?
 - **Casos extremos** — array vazio, valores negativos, entrada `null`/`undefined`, etc.
 - **Restrições** — respeita as proibições do enunciado (ex: sem `reduce()` quando o objetivo é um loop)?
@@ -143,20 +144,20 @@ Use esta progressão dentro de cada módulo:
 
 ### Formatação do JSDoc dos exercícios
 
-Todo arquivo de exercício deve possuir JSDoc formatado com HTML.
+Todo arquivo de exercício deve possuir JSDoc em texto simples. Comentários TypeScript não aplicam formatação — nem HTML nem markdown — e o texto aparece como está em qualquer editor.
 
 Use:
 
-- `<h2>` para o título do exercício;
-- `<p><strong>...</strong></p>` para os títulos das seções (Enunciado, Exemplos, Restrições, Complexidade esperada);
-- `<p>` para parágrafos descritivos;
-- `<pre>{@code ...}</pre>` para exemplos com entradas e saídas;
-- `<ul>` e `<li>` para listas de restrições e de complexidade;
-- `{@code ...}` para nomes de funções, valores e pequenos trechos mencionados no texto.
+- primeira linha com o título do exercício (ex: `Exercício 01 — Somar todos os elementos`);
+- `Enunciado:` para a descrição do problema;
+- `Exemplos:` para entradas e saídas esperadas;
+- `Restrições:` para as restrições;
+- `Complexidade esperada:` para tempo e espaço.
 
 Não usar:
 
-- Markdown dentro do JSDoc (`#`, `-`, `` ` ``, ```` ``` ````);
+- tags HTML (`<h2>`, `<p>`, `<strong>`, `<pre>`, `<ul>`, `<li>`) nem `{@code}`;
+- markdown (`**`, crases, blocos ``` ``` ```) — não é renderizado em comentários;
 - `<br>` repetidamente para simular estrutura;
 - comentários comuns `/* ... */` no lugar de `/** ... */`;
 - comentários `//` para documentar o arquivo inteiro.
@@ -169,28 +170,24 @@ Ao alterar a documentação de um exercício existente, preserve integralmente: 
 import { finalizar, iniciar, resultado } from "../../util/index.js";
 
 /**
- * <h2>Exercício 01 — Nome do exercício</h2>
+ * Exercício 01 — Nome do exercício
  *
- * <p><strong>Enunciado:</strong></p>
- * <p>
+ * Enunciado:
+ *
  * ...
- * </p>
  *
- * <p><strong>Exemplos:</strong></p>
- * <pre>{@code
+ * Exemplos:
+ *
  * ...
- * }</pre>
  *
- * <p><strong>Restrições:</strong></p>
- * <ul>
- *     <li>...</li>
- * </ul>
+ * Restrições:
  *
- * <p><strong>Complexidade esperada:</strong></p>
- * <ul>
- *     <li>Tempo: O(...)</li>
- *     <li>Espaço: O(...)</li>
- * </ul>
+ * - ...
+ *
+ * Complexidade esperada:
+ *
+ * - Tempo: O(...)
+ * - Espaço: O(...)
  */
 export function metodo(parametro: tipo): tipo {
     // TODO: implemente sua solução
@@ -408,6 +405,7 @@ Um exercício só pode ser considerado concluído quando:
 - A solução produz os resultados esperados em **todos** os testes.
 - Respeita as restrições do enunciado.
 - Trata casos extremos relevantes.
+- É **100% TypeScript idiomático**: tipos explícitos na assinatura, `readonly` para entradas não modificadas, sem `any` ou casts desnecessários.
 - O aluno demonstra entender a complexidade básica (tempo e espaço).
 
 ---
@@ -453,14 +451,14 @@ find . -type f -not -path './node_modules/*' -not -path './dist/*' -not -path '.
 ### Executar um exercício
 
 ```powershell
-npx tsx src/exercicios/arrays_e_loops/Exercicio01.ts
+npm run testar
 ```
 
 ```bash
-npx tsx src/exercicios/arrays_e_loops/Exercicio01.ts
+npm run testar
 ```
 
-Use o caminho indicado em `PROGRESSO.md`.
+O comando lê o arquivo do exercício atual em `PROGRESSO.md` e o executa com `tsx`, sempre apontando para o exercício certo.
 
 ### Verificação completa
 
