@@ -1,0 +1,21 @@
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+
+### IntelliJ IDEA ###
+.idea/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+
+### opencode ###
+.opencode/tmp/
+
+### IDE auxiliares ###
+*.swp
+*.swo
+*~
