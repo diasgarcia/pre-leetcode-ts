@@ -3,11 +3,13 @@
 ## Estado atual
 
 - Infraestrutura: pronta (src/util + test/util com 100% de cobertura)
-- Módulo atual: nenhum iniciado — a trilha começa no módulo 1 (Arrays e loops)
-- Exercício atual: nenhum exercício criado ainda
-- Status: aguardando o início do módulo 1
-- Último exercício concluído: nenhum
-- Próximo passo: criar o Exercício 01 — Somar todos os elementos (módulo 1)
+- Módulo atual: 1 — Arrays e loops
+- Exercício atual: Exercício 04 — Encontrar o menor número
+- Arquivo atual: src/exercicios/arrays_e_loops/Exercicio04.ts
+- Função atual: encontrarMenor
+- Status: aguardando implementação
+- Último exercício concluído: Exercício 03 — Encontrar o maior número
+- Próximo passo: implementar a função encontrarMenor
 
 ## Módulos
 
@@ -25,4 +27,8 @@
 
 ## Histórico
 
-Nenhum exercício concluído até o momento.
+| Data | Módulo | Exercício | Status | Observações |
+|---|---|---|---|---|
+| 2026-08-15 | Arrays e loops | 01 — Somar todos os elementos | Concluído | CCN 2, O(n)/O(1) |
+| 2026-08-15 | Arrays e loops | 02 — Contar números pares | Concluído | CCN 3, O(n)/O(1) |
+| 2026-08-15 | Arrays e loops | 03 — Encontrar o maior número | Concluído | CCN 4, O(n)/O(1) |
