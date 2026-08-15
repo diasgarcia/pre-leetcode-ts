@@ -47,6 +47,8 @@ Analise obrigatoriamente:
 - Usa regex quando proibido?
 - Usa métodos prontos de coleção que eliminam o objetivo pedagógico (`map`, `filter`, `reduce`, `sort`, `forEach`)?
 - É 100% TypeScript idiomático: tipos explícitos na assinatura (parâmetros e retorno), `readonly` para entradas não modificadas, sem `any` implícito, sem casts desnecessários, sem atalhos que escondam o tipo real?
+- Espaços residuais no fim de linha NAO bloqueiam a aprovacao (decisao do aluno).
+- Indices de laco podem usar i/j/k (padrao de mercado, decisao do aluno); nao reprovar por isso.
 - A solução passa nos testes por coincidência mas falha em outros casos?
 - Complexidade de tempo atende ao esperado?
 - Complexidade de espaço atende ao esperado?

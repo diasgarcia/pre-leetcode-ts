@@ -28,10 +28,15 @@ import { finalizar, iniciar, resultado } from "../../util/index.js";
  * - Espaço: O(1).
  */
 export function contarOcorrencias(numeros: readonly number[], alvo: number): number {
-    void numeros;
-    void alvo;
-    // TODO: implemente sua solução
-    return 0;
+
+    let contador = 0;
+    for (const numero of numeros) {
+        if (numero === alvo)  {
+            contador++;
+        }
+    }
+
+    return contador;
 }
 
 iniciar({

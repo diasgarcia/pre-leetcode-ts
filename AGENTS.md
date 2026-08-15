@@ -68,6 +68,7 @@ Ao revisar uma solução, analise obrigatoriamente:
 - **Casos extremos** — array vazio, valores negativos, entrada `null`/`undefined`, etc.
 - **Restrições** — respeita as proibições do enunciado (ex: sem `reduce()` quando o objetivo é um loop)?
 - **Simplificação** — há código redundante ou desnecessário?
+- **Espaços em branco** — linhas em branco para separar blocos são bem-vindas; espaços residuais no fim de linha NÃO são motivo de reprovação.
 - **Uso adequado da estrutura** — usou a estrutura que o módulo ensina?
 
 A revisão deve dizer claramente:
@@ -227,6 +228,7 @@ Não otimize prematuramente — foque em código claro e correto antes de pensar
 ## Convenções do projeto
 
 - Use nomes em português brasileiro para arquivos, funções, variáveis e pastas.
+- Índices de laço podem usar nomes curtos de mercado (i, j, k); o restante dos nomes permanece em português.
 - Mantenha um arquivo `.ts` por exercício.
 - Nomeie os arquivos como `Exercicio01.ts`, `Exercicio02.ts` e assim por diante.
 - Coloque a solução do aluno somente na função indicada pelo enunciado.
