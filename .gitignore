@@ -1,7 +1,15 @@
+### TypeScript / Node ###
 node_modules/
 dist/
 coverage/
 *.tsbuildinfo
+*.log
+npm-debug.log*
+
+### Segredos ###
+.env
+.env.*
+!.env.example
 
 ### IntelliJ IDEA ###
 .idea/
