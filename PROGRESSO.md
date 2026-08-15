@@ -4,12 +4,12 @@
 
 - Infraestrutura: pronta (src/util + test/util com 100% de cobertura)
 - Módulo atual: 1 — Arrays e loops
-- Exercício atual: Exercício 04 — Encontrar o menor número
-- Arquivo atual: src/exercicios/arrays_e_loops/Exercicio04.ts
-- Função atual: encontrarMenor
+- Exercício atual: Exercício 08 — Contar ocorrências de um número
+- Arquivo atual: src/exercicios/arrays_e_loops/Exercicio08.ts
+- Função atual: contarOcorrencias
 - Status: aguardando implementação
-- Último exercício concluído: Exercício 03 — Encontrar o maior número
-- Próximo passo: implementar a função encontrarMenor
+- Último exercício concluído: Exercício 07 — Inverter um array
+- Próximo passo: implementar a função contarOcorrencias
 
 ## Módulos
 
@@ -32,3 +32,7 @@
 | 2026-08-15 | Arrays e loops | 01 — Somar todos os elementos | Concluído | CCN 2, O(n)/O(1) |
 | 2026-08-15 | Arrays e loops | 02 — Contar números pares | Concluído | CCN 3, O(n)/O(1) |
 | 2026-08-15 | Arrays e loops | 03 — Encontrar o maior número | Concluído | CCN 4, O(n)/O(1) |
+| 2026-08-15 | Arrays e loops | 04 — Encontrar o menor número | Concluído | CCN 4, O(n)/O(1) |
+| 2026-08-15 | Arrays e loops | 05 — Verificar se um valor existe | Concluído | CCN 3, O(n)/O(1) |
+| 2026-08-15 | Arrays e loops | 06 — Retornar o índice de um valor | Concluído | CCN 3, O(n)/O(1) |
+| 2026-08-15 | Arrays e loops | 07 — Inverter um array | Concluído | CCN 3, O(n)/O(n) |

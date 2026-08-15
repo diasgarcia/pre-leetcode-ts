@@ -27,9 +27,19 @@ import { finalizar, iniciar, resultado } from "../../util/index.js";
  */
 export function encontrarMenor(numeros: readonly number[]): number {
 
-    void numeros;
-    // TODO: implemente sua solução
-    return 0;
+    let menorNumero: number | undefined = numeros[0];
+
+    if (menorNumero === undefined) {
+        return 0;
+    }
+
+    for (const numero of numeros) {
+        if (numero < menorNumero) {
+            menorNumero = numero;
+        }
+    }
+
+    return menorNumero;
 }
 
 iniciar({
